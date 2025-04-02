@@ -14,4 +14,12 @@ pip install vpython matplotlib jupyterlab (jupyter - optionally)
 
 source ~/jupyter_env/bin/activate
 
+to auth in git to github repo (to autologin):
 
+sudo apt install gh
+
+gh auth login
+
+>https
+...
+>Y
