@@ -1,5 +1,9 @@
 physics with mathplotlib and vpython
 
+to not restart kernel in jupyter lab after every change: 
+
+scene = canvas()
+
 to install matplot and vpython in ubuntu:
 
 sudo apt install python3-full (sudo apt install python3-venv)
@@ -19,7 +23,4 @@ to auth in git to github repo (to autologin):
 sudo apt install gh
 
 gh auth login
-
->https
-...
->Y
+Https
