@@ -16,7 +16,7 @@ y_points=[]
 current_t = 0.0
 while current_t <= t_total:
     x = vx * current_t
-    y = vy * current_t - 0.5 * g * current_t ** 2
+    y = vy * current_t - (g * current_t ** 2)/2
     if y < 0:
         break  
 
