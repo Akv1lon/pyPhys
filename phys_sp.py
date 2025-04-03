@@ -1,9 +1,9 @@
 import matplotlib.pyplot as plt
 import math as m
 
-v0 = 50
-angle_deg = 45
-dt = 0.5
+v0 = float(input('Введите скорость: '))
+angle_deg = float(input('Введите угол: '))
+dt = float(input('Введите шаг времени(по-умолчанию - 0.5): ') or 0.5)
 g=9.81
 
 angle_rad=m.radians(angle_deg)
@@ -22,7 +22,7 @@ while current_t <= t_total:
 
     x_points.append(x)
     y_points.append(y)
-    print(f'x= {x}, y={y}, t= {current_t},')
+    print(f'x= {round(x)}, y={round(y)}, t= {current_t},')
     current_t += dt                              
 
 plt.figure(figsize=(10, 6))
