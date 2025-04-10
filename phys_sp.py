@@ -25,15 +25,15 @@ while current_t <= t_total:
     print(f'x= {round(x)}, y={round(y)}, t= {current_t},')
     current_t += dt                              
 
-plt.figure(figsize=(10, 6))
-plt.plot(x_points, y_points, 'r-', label='Траектория')
+    plt.figure(figsize=(10, 6))
+    plt.plot(x_points, y_points, 'r-', label='Траектория')
 
-plt.scatter(x_points[0], y_points[0], color='blue', label='Старт')
-plt.scatter(x_points[-1], y_points[-1], color='black', label='Падение')
-plt.title(f"Траектория снаряда (v0={v0} м/с, угол={angle_deg}°)")
-plt.xlabel("Горизонтальная дальность (м)")
-plt.ylabel("Высота (м)")
-plt.grid(True)
-plt.legend()
-plt.show()
+    plt.scatter(x_points[0], y_points[0], color='blue', label='Старт')
+    plt.scatter(x_points[-1], y_points[-1], color='black', label='Падение')
+    plt.title(f"Траектория снаряда (v0={v0} м/с, угол={angle_deg}°)")
+    plt.xlabel("Горизонтальная дальность (м)")
+    plt.ylabel("Высота (м)")
+    plt.grid(True)
+    plt.legend()
+    plt.show()
 
